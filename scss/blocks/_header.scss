@@ -1,0 +1,23 @@
+.header{
+  height: 772px;
+  color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url('../../img/intro-img.jpg');
+}
+
+// .header__container{
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// }
+
+
+
+@include breakpoint-down(400px){
+  .header{
+    height: 577px;
+    background-image: url("../../img/intro-photo-small.jpg");
+  }
+}

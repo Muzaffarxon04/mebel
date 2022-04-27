@@ -1,0 +1,16 @@
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 1440px;
+padding: 0 auto;
+margin: 0 auto;
+}
+
+
+@include breakpoint-down(400px){
+  .container{
+    overflow: hidden;
+    max-width: 375px;
+    // background-color: red;
+  }
+}
