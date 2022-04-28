@@ -15,7 +15,7 @@
 
 
 
-@include breakpoint-down(400px){
+@include breakpoint-down(480px){
   .header{
     height: 577px;
     background-image: url("../../img/intro-photo-small.jpg");

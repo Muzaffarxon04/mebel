@@ -1,4 +1,15 @@
+let burgerMenu = document.querySelector(".header__burger")
+let X = document.querySelector(".x-btn")
+let Menu = document.querySelector(".header__menu")
 
+
+burgerMenu.addEventListener("click", (e) => {
+        Menu.classList.add("header__menus")
+})
+
+X.addEventListener("click", (e) => {
+    Menu.classList.remove("header__menus")
+})
 
 function range1(){
     let SliderValue = document.getElementById("slider").value;

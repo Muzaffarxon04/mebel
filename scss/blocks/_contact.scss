@@ -58,7 +58,7 @@ margin-bottom: 20px;
 }
 
 
-@include breakpoint-down(400px){
+@include breakpoint-down(480px){
 .contact{
     .contact__map{
         display: flex;

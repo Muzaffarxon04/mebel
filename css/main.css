@@ -451,7 +451,7 @@ img {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 480px) {
   .container {
     overflow: hidden;
     max-width: 375px;
@@ -467,7 +467,7 @@ img {
   background-image: url("../../img/intro-img.jpg");
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 480px) {
   .header {
     height: 577px;
     background-image: url("../../img/intro-photo-small.jpg");
@@ -576,7 +576,7 @@ img {
   display: none;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 480px) {
   .first-logo {
     display: none;
   }
@@ -599,6 +599,12 @@ img {
 
 .navbar {
   padding: 34px 0;
+}
+
+.header__burger {
+  display: none;
+  border: none;
+  background-color: transparent;
 }
 
 .header__logo-wrapper {
@@ -648,8 +654,62 @@ img {
   border-bottom: 2px solid #ffffff;
 }
 
+.x-btn {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .x-btn {
+    display: block;
+    font-size: 40px;
+    position: relative;
+    right: 0;
+  }
+  .header__logo-wrapper {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header__burger {
+    display: block;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__menus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    background-color: red;
+    width: 100vw;
+    height: 100vh;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    z-index: 100000;
+  }
+  .header__menus .header__menu {
+    padding: 20px 20px;
+  }
+  .header__menus .menu__item, .header__menus .x-btn {
+    padding: 5px 30px;
+  }
+}
+
 .intro {
   text-align: center;
+  text-transform: capitalize;
 }
 
 .intro__title {
@@ -670,6 +730,7 @@ img {
   font-size: 20px;
   line-height: 30px;
   position: relative;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .intro__subtitle::before {
@@ -699,7 +760,7 @@ img {
   color: #2BA1FF;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 480px) {
   .intro__title {
     font-size: 22px;
     line-height: 34px;
@@ -859,7 +920,7 @@ img {
   text-align: left;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 480px) {
   .services__card {
     width: 48.5%;
     height: 227px;
@@ -895,13 +956,14 @@ img {
     line-height: 24px;
   }
   .process__card div .card__number {
+    height: 25px;
     font-size: 20px;
     font-weight: 400;
     line-height: 26px;
     -webkit-transform: rotate(270deg);
             transform: rotate(270deg);
     position: relative;
-    top: 40px;
+    bottom: 0;
   }
   .process__card div .card__number::before {
     width: 1px;
@@ -913,7 +975,6 @@ img {
 
 .delivery {
   padding: 60px 0;
-  height: 747px;
   background-color: #fff;
 }
 
@@ -928,6 +989,7 @@ img {
 
 .delivery__text-wrapper {
   width: 536px;
+  padding-left: 20px;
 }
 
 .delivery__title {
@@ -966,6 +1028,7 @@ img {
 }
 
 .delivery__img img {
+  border-radius: 10px;
   position: absolute;
   left: 30px;
   top: 30px;
@@ -990,7 +1053,11 @@ img {
   color: #fff;
 }
 
-@media only screen and (max-width: 400px) {
+.mob {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
   .delivery .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1000,19 +1067,32 @@ img {
   .delivery__title, .delivery__subtitle {
     text-align: center;
     width: 100%;
+    display: none;
   }
   .delivery__img {
     width: 90%;
+    height: 300px;
     left: 0;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    margin-bottom: 12px;
+  }
+  .delivery__img img {
+    left: 20px;
+    top: 20px;
+    height: 300px;
   }
   .delivery__text-wrapper {
     width: 100%;
   }
   .delivery__text-wrapper .delivery__text {
     width: 100%;
+  }
+  .delivery__btn {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+  .mob {
+    display: block;
   }
 }
 
@@ -1030,11 +1110,8 @@ img {
           justify-content: space-between;
 }
 
-.removed {
-  display: block;
-}
-
 .about__text-wrapper {
+  padding-left: 20px;
   width: 536px;
 }
 
@@ -1059,12 +1136,15 @@ img {
   margin: 0;
 }
 
-.about__text:last-child {
+.about__text:nth-child(5), .about__text:nth-child(6) {
+  overflow: hidden;
+}
+
+.remove {
   display: none;
 }
 
 .about__img {
-  top: 60px;
   position: relative;
   right: 40px;
   border: 8px solid #2BA1FF;
@@ -1074,6 +1154,7 @@ img {
 }
 
 .about__img img {
+  border-radius: 10px;
   position: absolute;
   left: 40px;
   bottom: 40px;
@@ -1081,18 +1162,23 @@ img {
   width: 598px;
 }
 
-@media only screen and (max-width: 400px) {
-  .removed {
-    display: none;
+@media only screen and (max-width: 480px) {
+  .remove {
+    display: block;
+    padding-top: 62px;
   }
   .about {
-    height: 889px;
+    padding: 40px 0 50px;
   }
   .about .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .about .about__text-wrapper {
+    padding: 0;
+    width: 99%;
   }
   .about .about__title {
     font-size: 24px;
@@ -1107,17 +1193,21 @@ img {
     font-size: 12px;
     font-weight: 400;
     line-height: 24px;
-    width: 235px;
+    width: 90%;
   }
-  .about .about__text:last-child {
-    display: block;
+  .about .about__text:nth-child(5), .about .about__text:nth-child(6) {
+    display: none;
   }
   .about .about__img {
+    top: 50px;
     right: 0;
     width: 314px;
     height: 307px;
+    border: 4px solid #2ba1ff;
   }
   .about .about__img img {
+    left: 20px;
+    bottom: 20px;
     width: 314px;
     height: 307px;
   }
@@ -1152,7 +1242,10 @@ img {
       flex-wrap: wrap;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 480px) {
+  .process {
+    padding: 80px 0;
+  }
   .process__title {
     font-size: 24px;
     font-weight: 700;
@@ -1164,6 +1257,7 @@ img {
     line-height: 22px;
     text-align: center;
     width: 80%;
+    margin-bottom: 40px;
   }
   .process__cards-wrapper {
     -webkit-box-pack: center;
@@ -1240,7 +1334,7 @@ img {
   margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 480px) {
   .contact .contact__map {
     display: -webkit-box;
     display: -ms-flexbox;
