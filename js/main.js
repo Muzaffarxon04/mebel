@@ -1,15 +1,24 @@
 let burgerMenu = document.querySelector(".header__burger")
 let X = document.querySelector(".x-btn")
+let item = document.querySelectorAll(".menu__item")
 let Menu = document.querySelector(".header__menu")
 
 
 burgerMenu.addEventListener("click", (e) => {
         Menu.classList.add("header__menus")
 })
-
-X.addEventListener("click", (e) => {
-    Menu.classList.remove("header__menus")
+console.log(item);
+item.forEach((e) => {
+ 
+    X.addEventListener("click", (e) => {
+        Menu.classList.remove("header__menus")
+    })
+    
+    e.addEventListener("click", (e) => {
+        Menu.classList.remove("header__menus")
+    })
 })
+
 
 function range1(){
     let SliderValue = document.getElementById("slider").value;

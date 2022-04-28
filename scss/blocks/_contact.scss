@@ -2,6 +2,7 @@
     padding: 120px 0;
 }
 .contact__title {
+    font-family: "Poppins", sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 49px;
@@ -60,6 +61,17 @@ margin-bottom: 20px;
 
 @include breakpoint-down(480px){
 .contact{
+    .contact__title{
+font-size: 24px;
+line-height: 36px;
+
+    }
+    .contact__subtitle{
+font-size: 18px;
+line-height: 26px;
+width: 100%;
+margin: 0 auto;
+    }
     .contact__map{
         display: flex;
         flex-direction: column-reverse;
@@ -71,7 +83,9 @@ margin-bottom: 20px;
     
             
     }
-
+.contact__link{
+    width: 100%;
+}
     .contact__list{
         width: 100%;
     }
