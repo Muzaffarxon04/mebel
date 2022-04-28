@@ -114,7 +114,7 @@ text-align: left;
 }
 
 
-@include breakpoint-down(480px){
+@include breakpoint-down(500px){
 
     .services__card{
  width: 48.5%;

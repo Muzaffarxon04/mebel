@@ -97,7 +97,7 @@
     display: none;
 }
 
-@include breakpoint-down(480px){
+@include breakpoint-down(500px){
     .first-logo{
         display: none;
     }
@@ -119,5 +119,15 @@ font-size: 20px;
 font-weight: 600;
 line-height: 24px;
 
+    }
+
+    .items{
+      .footer__link{
+        opacity: 80%;
+
+        &::before{
+          opacity: 100%;
+        }
+      }
     }
 }

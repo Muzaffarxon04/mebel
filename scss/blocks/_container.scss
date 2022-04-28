@@ -7,9 +7,9 @@ margin: 0 auto;
 }
 
 
-@include breakpoint-down(480px){
+@include breakpoint-down(500px){
   .container{
     overflow: hidden;
-    max-width: 375px;
+    max-width: 475px;
   }
 }

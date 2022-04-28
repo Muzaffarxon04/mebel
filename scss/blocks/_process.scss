@@ -27,7 +27,7 @@ margin: 10px auto 60px auto;
 
 
 
-@include breakpoint-down(480px){
+@include breakpoint-down(500px){
   .process{
     padding: 80px 0;
   }

@@ -52,7 +52,7 @@ color: #2BA1FF;
 }
 }
 
-@include breakpoint-down(480px){
+@include breakpoint-down(500px){
     .intro__title{
         font-size: 22px;
         line-height: 34px;

@@ -59,7 +59,7 @@ margin-bottom: 20px;
 }
 
 
-@include breakpoint-down(480px){
+@include breakpoint-down(500px){
 .contact{
     .contact__title{
 font-size: 24px;
