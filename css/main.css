@@ -450,7 +450,6 @@ img {
   max-width: 1310px;
   padding: 0 auto;
   margin: 0 auto;
-  overflow-x: auto;
 }
 
 @media only screen and (max-width: 1082px) {
@@ -748,6 +747,10 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .header__logo-wrapper .header__phone {
+    display: block;
+    padding: 0;
   }
   .header__menu {
     padding: 20px 20px;
@@ -1073,7 +1076,11 @@ img {
 @media only screen and (max-width: 370px) {
   .services__card {
     width: 100%;
+    position: relative;
     margin-right: 0;
+  }
+  .services__card .card__title::before {
+    left: 32% !important;
   }
 }
 

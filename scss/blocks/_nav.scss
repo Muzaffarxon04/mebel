@@ -119,6 +119,10 @@ padding: 0;
   .header__logo-wrapper{
     width: 100%;
     justify-content: space-between;
+    .header__phone{
+      display: block;
+    padding: 0;
+    }
   }
  
     .header__menu{

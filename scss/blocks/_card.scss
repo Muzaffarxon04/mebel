@@ -227,9 +227,16 @@ line-height: 18px;
 @include breakpoint-down(370px){
 .services__card{
     width: 100%;
-
+position: relative;
     margin-right: 0;
 
+    .card__title{
+        &::before{
+       left: 32% !important;
+        }
+    }
 }
+
+
 
 }
