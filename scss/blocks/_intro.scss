@@ -1,6 +1,5 @@
 .intro{
     text-align: center;
-    text-transform: capitalize;
 }
 .intro__title{
     margin: 0 auto;
@@ -14,6 +13,7 @@ width: 950px;
 }
 
 .intro__subtitle{
+  
     margin: 0 auto 70px auto;
     padding: 10px 0 0 0;
     width: 400px;
@@ -50,6 +50,14 @@ border: 2px solid transparent;
     background-color: transparent;
 color: #2BA1FF;
 }
+}
+
+
+@include breakpoint-down(1083px){
+.intro__title{
+    width: 90%;
+}
+
 }
 
 @include breakpoint-down(500px){

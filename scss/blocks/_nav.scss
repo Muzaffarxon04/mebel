@@ -47,48 +47,85 @@ padding: 5px 0;
 .x-btn{
   display: none;
 }
+
+
+@include breakpoint-down(750px){
+  .x-btn{
+    display: block;
+    font-size: 40px;
+    position: relative;
+    right: 0;
+      }
+      .header__logo-wrapper{
+        width: 100%;
+        justify-content: space-between;
+      }
+      .header__burger{
+        display: block;
+    
+        
+      }
+     .header__menu{
+       display: none;
+     }
+    
+      .header__menus{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-end;
+        background-color: rgba(0, 0, 0, 1.0);
+        width: 100vw;
+        height: 100vh;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        left: 0;
+        position: fixed;
+        z-index: 100000;
+      }
+        .header__menu{
+          padding: 20px 20px;
+        }
+        .menu__item, .x-btn{
+          padding: 5px 30px;
+        }
+      
+}
+
+
+@include breakpoint-down(1083px){
+.header__menu{
+padding: 0;
+  .menu__item{
+    padding-left: 20px;
+  }
+}
+
+}
+
+@include breakpoint-down(911px){
+.header__logo-wrapper{
+  .header__phone{
+    display: none;
+  }
+}
+
+}
+
 @include breakpoint-down(500px){
   
-  
-  .x-btn{
-display: block;
-font-size: 40px;
-position: relative;
-right: 0;
-  }
+
   .header__logo-wrapper{
     width: 100%;
     justify-content: space-between;
   }
-  .header__burger{
-    display: block;
-
-    
-  }
- .header__menu{
-   display: none;
- }
-
-  .header__menus{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    align-items: flex-end;
-    background-color: rgba(0, 0, 0, 1.0);
-    width: 100vw;
-    height: 100vh;
-    bottom: 0;
-    top: 0;
-    right: 0;
-    left: 0;
-    position: fixed;
-    z-index: 100000;
-
+ 
     .header__menu{
       padding: 20px 20px;
     }
     .menu__item, .x-btn{
       padding: 5px 30px;
     }
-  }
+
 }
