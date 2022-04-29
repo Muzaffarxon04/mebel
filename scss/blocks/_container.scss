@@ -4,6 +4,8 @@
   max-width: 1310px;
 padding: 0 auto;
 margin: 0 auto;
+overflow: hidden;
+
 }
 
 @include breakpoint-down(1082px){
