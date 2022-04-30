@@ -842,7 +842,7 @@ img {
 
 .services {
   background-color: #ffffff;
-  padding: 100px 0 120px 0;
+  padding: 120px 0 70px 0;
 }
 
 .services__card-wrapper {
@@ -861,7 +861,6 @@ img {
   line-height: 60px;
   text-align: center;
   text-transform: capitalize;
-  margin-top: 120px;
 }
 
 .services__subtitle {
@@ -1099,8 +1098,8 @@ img {
 }
 
 .delivery__text-wrapper {
-  width: 536px;
-  padding-left: 20px;
+  width: 50%;
+  padding: 0 100px 0 20px;
 }
 
 .delivery__title {
@@ -1116,11 +1115,11 @@ img {
   font-weight: 500;
   line-height: 26px;
   margin-bottom: 20px;
-  width: 400px;
+  width: 100%;
 }
 
 .delivery__text {
-  width: 450px;
+  width: 100%;
   opacity: 70%;
   margin: 0;
 }
@@ -1134,7 +1133,7 @@ img {
   border: 8px solid #2BA1FF;
   height: 500px;
   width: 40%;
-  margin-right: 40px;
+  margin-right: 80px;
   border-radius: 10px;
 }
 
@@ -1261,7 +1260,7 @@ img {
 
 .about__text-wrapper {
   padding-left: 20px;
-  width: 39%;
+  width: 50%;
 }
 
 .about__title {
@@ -1297,7 +1296,7 @@ img {
 
 .about__img {
   position: relative;
-  margin: 40px 40px 0;
+  margin: 40px 80px 0;
   border: 8px solid #2BA1FF;
   height: 500px;
   width: 40%;
@@ -1463,7 +1462,7 @@ img {
   height: 354px;
   width: 757px;
   border-radius: 10px;
-  margin-right: 80px;
+  margin-right: 50px;
 }
 
 .contact__map div iframe {
@@ -1488,7 +1487,7 @@ img {
   font-size: 16px;
   font-weight: 550;
   line-height: 19px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .contact__link {
@@ -1537,7 +1536,7 @@ img {
 }
 
 .working {
-  padding: 120px 0 130px 0;
+  padding: 100px 0;
   overflow: hidden;
 }
 
