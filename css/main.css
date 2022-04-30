@@ -513,7 +513,6 @@ img {
 .footer__link {
   opacity: 80%;
   padding-left: 30px;
-  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -670,7 +669,6 @@ img {
 
 .menu__link:hover {
   color: #ffffff;
-  border-bottom: 2px solid #ffffff;
 }
 
 .x-btn {
@@ -815,6 +813,7 @@ img {
 @media only screen and (max-width: 1083px) {
   .intro__title {
     width: 90%;
+    font-size: 50px;
   }
 }
 
@@ -924,6 +923,8 @@ img {
   margin: 0 auto;
   width: 250px;
   height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .process__card {
@@ -1337,7 +1338,7 @@ img {
     padding-left: 20px;
   }
   .about {
-    padding: 40px 0 50px;
+    padding: 40px 0 10px;
   }
   .about .container {
     -webkit-box-orient: vertical;
@@ -1410,7 +1411,7 @@ img {
 
 @media only screen and (max-width: 500px) {
   .process {
-    padding: 80px 0;
+    padding: 80px 0 40px;
   }
   .process__title {
     font-size: 24px;
@@ -1536,7 +1537,7 @@ img {
 }
 
 .working {
-  padding: 100px 0;
+  padding: 50px 0;
   overflow: hidden;
 }
 
