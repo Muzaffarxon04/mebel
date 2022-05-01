@@ -1,6 +1,59 @@
 .navbar{
-  padding: 34px 0;
+  z-index: 1000000;
+ position: sticky;
+  padding: 22px 0;
+  width: 100%;
+  height: 90px;
+
+  
+  .container{
+    align-items: baseline;
+  }
 }
+
+.btn-zakaz{
+font-size: 18px;
+font-weight: 500;
+line-height: 22px;
+  background: #2BA1FF;
+padding: 10px 22px !important;
+border-radius: 8px;
+color: #ffffff;
+border: none;
+&:hover{
+  color: #ffffff !important;
+}
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  background: #F9F9F9;
+ 
+  .btn-zakaz{
+  color: #ffffff;
+    
+&:hover{
+  color: #ffffff;
+
+}
+  }
+
+  .menu__link{
+  color:  #444245;
+  &:nth-child(2){
+    color: #ffffff !important;
+  }
+  }
+.header__phone{
+  color: #444245;
+}
+
+}
+
+
+
+
 .header__burger{
   display: none;
   border: none;
@@ -24,7 +77,8 @@ font-size: 18px;
 line-height: 22px;
 font-weight: 500;
 &:hover{
-  color: #ffffff;
+  color: #2AA1FF;
+  
 }
 }
 
@@ -39,7 +93,8 @@ font-weight: 500;
 line-height: 22px;
 padding: 5px 0;
 &:hover{
-  color: #ffffff;
+  color: #2AA1FF;
+  
 }
 }
 
@@ -113,8 +168,6 @@ padding: 0;
 }
 
 @include breakpoint-down(500px){
-  
-
   .header__logo-wrapper{
     width: 100%;
     justify-content: space-between;

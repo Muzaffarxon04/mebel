@@ -473,6 +473,13 @@ img {
   background-image: url("../../img/intro-img.jpg");
 }
 
+.header .header__conainer {
+  background-color: red !important;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
 @media only screen and (max-width: 500px) {
   .header {
     height: 577px;
@@ -616,7 +623,59 @@ img {
 }
 
 .navbar {
-  padding: 34px 0;
+  z-index: 1000000;
+  position: -webkit-sticky;
+  position: sticky;
+  padding: 22px 0;
+  width: 100%;
+  height: 90px;
+}
+
+.navbar .container {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.btn-zakaz {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  background: #2BA1FF;
+  padding: 10px 22px !important;
+  border-radius: 8px;
+  color: #ffffff;
+  border: none;
+}
+
+.btn-zakaz:hover {
+  color: #ffffff !important;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  background: #F9F9F9;
+}
+
+.sticky .btn-zakaz {
+  color: #ffffff;
+}
+
+.sticky .btn-zakaz:hover {
+  color: #ffffff;
+}
+
+.sticky .menu__link {
+  color: #444245;
+}
+
+.sticky .menu__link:nth-child(2) {
+  color: #ffffff !important;
+}
+
+.sticky .header__phone {
+  color: #444245;
 }
 
 .header__burger {
@@ -652,7 +711,7 @@ img {
 }
 
 .header__phone:hover {
-  color: #ffffff;
+  color: #2AA1FF;
 }
 
 .menu__item {
@@ -668,7 +727,7 @@ img {
 }
 
 .menu__link:hover {
-  color: #ffffff;
+  color: #2AA1FF;
 }
 
 .x-btn {
@@ -760,6 +819,10 @@ img {
 
 .intro {
   text-align: center;
+}
+
+.ass {
+  padding-top: 160px !important;
 }
 
 .intro__title {
