@@ -4,7 +4,6 @@ let item = document.querySelectorAll(".menu__item")
 let Menu = document.querySelector(".header__menu")
 let header = document.getElementById("myHeader");
 let logo = document.querySelector(".header__logo");
-let title = document.querySelector(".intro__title");
 
 burgerMenu.addEventListener("click", (e) => {
         Menu.classList.add("header__menus")
@@ -67,11 +66,9 @@ var sticky = header.offsetTop;
 function myFunction() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
-    title.classList.add("ass");
     logo.src = "../img/logo-dark.svg"
   } else {
     header.classList.remove("sticky");
-    title.classList.remove("ass");
     logo.src = "../img/logo.svg"
 
   }
