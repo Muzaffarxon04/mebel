@@ -499,9 +499,9 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -591,17 +591,7 @@ img {
   display: none;
 }
 
-.second-logo {
-  display: none;
-}
-
 @media only screen and (max-width: 500px) {
-  .first-logo {
-    display: none;
-  }
-  .second-logo {
-    display: block;
-  }
   .footer__subtitle {
     width: 167px;
     color: #5C5A5D;
@@ -833,6 +823,12 @@ img {
   }
 }
 
+@media only screen and (max-width: 325px) {
+  .header__logo-wrapper .header__phone {
+    display: none !important;
+  }
+}
+
 .intro {
   padding-top: 90px;
   text-align: center;
@@ -912,6 +908,12 @@ img {
   .zakaz-btn {
     display: inline-block;
     padding: 10px 40px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .intro__title {
+    width: 90%;
   }
 }
 

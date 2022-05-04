@@ -87,3 +87,10 @@ display: inline-block;
 padding: 10px 40px;
 } 
 }
+
+
+@include breakpoint-down(400px){
+.intro__title{
+    width: 90%;
+}
+}

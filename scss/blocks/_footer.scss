@@ -5,7 +5,7 @@
 .footer__menu {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -94,17 +94,9 @@
   }
 }
 
-.second-logo{
-    display: none;
-}
 
 @include breakpoint-down(500px){
-    .first-logo{
-        display: none;
-    }
-    .second-logo{
-        display: block;
-    }
+
 
     .footer__subtitle{
         width: 167px;

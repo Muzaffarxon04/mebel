@@ -201,3 +201,17 @@ padding: 0;
     }
 
 }
+
+
+
+@include breakpoint-down(325px){
+  .header__logo-wrapper{
+    .header__phone{
+      display: none !important;
+
+    }
+  }
+ 
+   
+
+}
