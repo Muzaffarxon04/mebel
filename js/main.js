@@ -66,10 +66,10 @@ var sticky = header.offsetTop;
 function myFunction() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
-    logo.src = "../img/logo-dark.svg"
-  } else {
-    header.classList.remove("sticky");
     logo.src = "../img/logo.svg"
+} else {
+    header.classList.remove("sticky");
+    logo.src = "../img/logo-white.svg"
 
   }
 }

@@ -42,10 +42,7 @@ line-height: 26px;
 text-align: center;
 width: 546px;
 
-  @media screen and (max-width:576px){
-    font-size: 13px;
-    line-height: 18px;
-  }
+
 }
 
 @mixin subtitle {
@@ -97,10 +94,7 @@ line-height: 60px;
   }
 
 
-  @media screen and (max-width:576px){
-    font-size: 14px;
-    line-height: 18px;
-  }
+
 }
 
 @mixin about-title {

@@ -608,6 +608,9 @@ img {
     font-size: 11px;
     line-height: 20px;
   }
+  .footer-item {
+    width: 40%;
+  }
   .footer__item {
     margin-top: 30px;
     font-size: 20px;
@@ -640,7 +643,7 @@ img {
   font-size: 18px;
   font-weight: 500;
   line-height: 22px;
-  background: #389bff;
+  background: #69BDFF;
   padding: 10px 22px !important;
   border-radius: 8px;
   color: #ffffff;
@@ -654,6 +657,10 @@ img {
 .sticky {
   top: 0;
   background: #F9F9F9;
+}
+
+.sticky .fa-bars {
+  color: #242424;
 }
 
 .sticky .btn-zakaz {
@@ -678,6 +685,10 @@ img {
 
 .sticky .header__menus * {
   color: #ffffff;
+}
+
+.fa-bars {
+  color: #FFFFFF;
 }
 
 .header__burger {
@@ -737,6 +748,9 @@ img {
 }
 
 @media only screen and (max-width: 750px) {
+  .header__phone {
+    display: block !important;
+  }
   .x-btn {
     display: inline-block;
     font-size: 40px;
@@ -862,14 +876,14 @@ img {
   line-height: 30px;
   border-radius: 8px;
   padding: 15px 40px 15px 40px;
-  background: #2BA1FF;
+  background: #69BDFF;
   border: 2px solid transparent;
 }
 
 .zakaz-btn:hover {
-  border: 2px solid #2BA1FF;
+  border: 2px solid #69BDFF;
   background-color: transparent;
-  color: #2BA1FF;
+  color: #69BDFF;
 }
 
 @media only screen and (max-width: 1083px) {
@@ -932,6 +946,21 @@ img {
   width: 70%;
   margin: 0 auto;
   margin-bottom: 60px;
+}
+
+@media only screen and (max-width: 500px) {
+  .services {
+    padding: 80px 0 90px 0;
+  }
+  .services__title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .services__subtitle {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
 }
 
 .services__card {
@@ -1133,6 +1162,33 @@ img {
     left: 15px;
     width: 80px;
   }
+  .process__card {
+    height: 155px;
+    margin-bottom: 20px;
+    padding: 30px 20px 38px 23px;
+  }
+  .process__card .card__title {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    width: 80%;
+    text-align: left;
+    margin: 0;
+  }
+  .process__card .card__number-wrapper {
+    margin-top: 50px;
+  }
+  .process__card .card__number {
+    font-size: 20px !important;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  .process__card .card__number::before {
+    height: 1px !important;
+    width: 50px !important;
+    left: 35px !important;
+    top: 33% !important;
+  }
 }
 
 @media only screen and (max-width: 370px) {
@@ -1278,6 +1334,18 @@ img {
     width: 100%;
     display: none;
   }
+  .delivery__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+  .delivery__subtitle {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26px;
+    width: 80%;
+    margin: 0 auto 20px;
+  }
   .delivery__img {
     top: 0;
     height: 300px;
@@ -1292,6 +1360,7 @@ img {
   }
   .delivery__text-wrapper {
     width: 100%;
+    padding: 0;
   }
   .delivery__text-wrapper .delivery__text {
     width: 100%;
@@ -1400,7 +1469,8 @@ img {
     padding-left: 20px;
   }
   .about {
-    padding: 40px 0 10px;
+    padding: 40px 0 50px;
+    color: #444245;
   }
   .about .container {
     -webkit-box-orient: vertical;
@@ -1422,6 +1492,7 @@ img {
     line-height: 17px;
   }
   .about .about__text {
+    font-size: 12px;
     font-weight: 400;
     line-height: 24px;
     width: 100%;
@@ -1473,7 +1544,7 @@ img {
 
 @media only screen and (max-width: 500px) {
   .process {
-    padding: 80px 0 40px;
+    padding: 80px 0 70px;
   }
   .process__title {
     font-size: 24px;
@@ -1592,6 +1663,7 @@ img {
   }
   .contact .contact__map .contact__link {
     width: 100%;
+    font-size: 16px;
   }
   .contact .contact__map .contact__list {
     width: 100%;
@@ -1622,13 +1694,6 @@ img {
   height: 2px;
 }
 
-@media screen and (max-width: 576px) {
-  .working__top-title {
-    font-size: 14px;
-    line-height: 18px;
-  }
-}
-
 .working__top-title::before {
   display: none;
   left: 50%;
@@ -1656,13 +1721,6 @@ img {
   max-width: 821px;
   margin: 0 auto 75px auto;
   width: 100%;
-}
-
-@media screen and (max-width: 576px) {
-  .working__title {
-    font-size: 13px;
-    line-height: 18px;
-  }
 }
 
 .working__carousel-indicators {
@@ -1827,14 +1885,25 @@ img {
     height: 250px;
     padding-left: 0;
   }
+  .working {
+    padding: 50px 0;
+    overflow: hidden;
+  }
+  .working__top-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+  .working__title {
+    width: 90%;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+  }
   .working__texts {
     position: static;
     -webkit-transform: rotate(0);
             transform: rotate(0);
-  }
-  .working__title {
-    font-size: 22px;
-    line-height: 25px;
   }
   .working__desc {
     font-size: 18px;

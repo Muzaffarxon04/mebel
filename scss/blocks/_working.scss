@@ -172,15 +172,31 @@
         height: 250px;
         padding-left: 0;
     }
+
+    .working {
+        padding: 50px 0;
+        overflow: hidden;
+        &__top-title {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 36px;
+            
+        }
+        
+    &__title {
+        width: 90%;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+            }
+
+    }    
     .working__texts{
         position: static;
         transform: rotate(0);
     }
 
-    .working__title{
-        font-size: 22px;
-        line-height: 25px;
-    }
+ 
     .working__desc{
         font-size: 18px;
 

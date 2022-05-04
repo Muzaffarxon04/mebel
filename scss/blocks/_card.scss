@@ -221,7 +221,33 @@ line-height: 18px;
     }
  
 
-    
+.process__card{
+    height: 155px;
+    margin-bottom: 20px;
+    padding: 30px 20px 38px 23px;
+    .card__title{
+font-size: 14px;
+font-weight: 500;
+line-height: 24px;
+width: 80%;
+text-align: left;
+margin: 0;
+    }
+.card__number-wrapper{
+    margin-top: 50px;
+}
+    .card__number{
+font-size: 20px !important;
+font-weight: 400;
+line-height: 26px;
+&::before{
+    height: 1px !important;
+    width: 50px !important;
+    left: 35px !important;
+    top: 33% !important;
+}
+    }
+}    
 }
 
 @include breakpoint-down(370px){

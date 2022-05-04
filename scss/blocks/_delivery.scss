@@ -133,6 +133,22 @@ margin: 0 auto 50px auto;
     width: 100%;
     display: none;
 }
+
+.delivery__title{
+font-size: 24px;
+font-weight: 700;
+line-height: 36px;
+
+}
+
+.delivery__subtitle{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26px;
+width: 80%;
+margin: 0 auto 20px;
+}
+
 .delivery__img{
     top: 0;
     height: 300px;
@@ -151,7 +167,7 @@ margin-bottom: 70px;
 
     .delivery__text-wrapper{
         width: 100%;
-
+padding: 0;
         .delivery__text{
             width: 100%;
         }
