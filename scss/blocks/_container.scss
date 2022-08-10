@@ -2,18 +2,18 @@
 .container {
   width: 100%;
   max-width: 1310px;
-padding: 0 auto;
-margin: 0 auto;
+  padding: 0 auto;
+  margin: 0 auto;
 }
 
-@include breakpoint-down(1082px){
-  .container{
+@include breakpoint-down(1082px) {
+  .container {
     max-width: 1042px;
   }
 }
 
-@include breakpoint-down(500px){
-  .container{
+@include breakpoint-down(500px) {
+  .container {
     max-width: 475px;
   }
 }

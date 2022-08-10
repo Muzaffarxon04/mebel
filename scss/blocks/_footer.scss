@@ -16,7 +16,7 @@
 
 .footer__link {
   opacity: 80%;
-    padding-left: 30px;
+  padding-left: 30px;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -82,7 +82,7 @@
 
 .footer-item {
   .footer__link {
-      padding: 0;
+    padding: 0;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
@@ -94,35 +94,30 @@
   }
 }
 
+@include breakpoint-down(500px) {
+  .footer__subtitle {
+    width: 167px;
+    color: #5c5a5d;
+    font-size: 11px;
+    line-height: 20px;
+  }
+  .footer-item {
+    width: 40%;
+  }
+  .footer__item {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+  }
 
-@include breakpoint-down(500px){
+  .items {
+    .footer__link {
+      opacity: 80%;
 
-
-    .footer__subtitle{
-        width: 167px;
-        color:  #5C5A5D;
-font-size: 11px;
-line-height: 20px;
-
-    }
-.footer-item{
-  width: 40%;
-}
-    .footer__item{
-        margin-top: 30px;
-font-size: 20px;
-font-weight: 600;
-line-height: 24px;
-
-}
-
-    .items{
-      .footer__link{
-        opacity: 80%;
-
-        &::before{
-          opacity: 100%;
-        }
+      &::before {
+        opacity: 100%;
       }
     }
+  }
 }

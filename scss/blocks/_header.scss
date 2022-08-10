@@ -1,24 +1,19 @@
-.header{
+.header {
   height: 772px;
-  color: #FFFFFF;
+  color: #ffffff;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-  background-image: url('../../img/intro-img.jpg');
+  background-image: url("../../img/intro-img.jpg");
 
-
-  .header__conainer{
+  .header__conainer {
     background-color: red !important;
     align-items: baseline;
   }
 }
 
-
-
-
-
-@include breakpoint-down(500px){
-  .header{
+@include breakpoint-down(500px) {
+  .header {
     height: 577px;
     background-position: left center;
     background-size: cover;
